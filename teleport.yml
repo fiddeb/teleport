@@ -1,0 +1,22 @@
+teleport:
+  nodename: awx
+  data_dir: /var/lib/teleport
+  auth_token: REPACEME
+  auth_servers:
+    - teleport.REPLACEME:443
+  log:
+    output: stderr
+    severity: INFO
+  ca_pin: REPLACEME
+app_service:
+  enabled: yes
+
+  apps:
+    - name: appname
+      uri: "http://127.0.0.1"
+auth_service:
+  enabled: no
+ssh_service:
+  enabled: yes
+proxy_service:
+  enabled: no
